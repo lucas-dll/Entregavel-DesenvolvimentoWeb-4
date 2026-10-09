@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Lucas</title>
+    <style>
+        body {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        input, button {
+            padding: 8px;
+            font: inherit;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        button, li {
+            cursor: pointer;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .destaque {
+            background-color: #fff2b2;
+            font-weight: bold;
+        }
+
+        .feito {
+            text-decoration: line-through;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 id="titulo">Meu blog</h1>
+        <p class="texto">Atividade de arrays, DOM e eventos em JavaScript.</p>
+        <p class="texto">Abra o Console com F12 para acompanhar os resultados.</p>
+
+        <h2>Eventos</h2>
+        <button id="botao" type="button">Clique aqui</button>
+        <p>
+            <label for="nome">Nome:</label>
+            <input id="nome" type="text">
+        </p>
+
+        <h2>Lista de tarefas</h2>
+        <p>Clique em um item para marcar ou desmarcar como feito.</p>
+        <ul id="lista">
+            <li>Item inicial 1</li>
+            <li>Item inicial 2</li>
+            <li>Item inicial 3</li>
+        </ul>
+
+        <form id="formulario">
+            <label for="tarefa">Nova tarefa:</label>
+            <input id="tarefa" type="text">
+            <button type="submit">Adicionar</button>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
